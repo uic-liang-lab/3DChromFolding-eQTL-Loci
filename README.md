@@ -31,8 +31,8 @@ For each file, there are 9 columns:
 - j1 - beads index of second contact locus (j1 >= i1)
 - fq - quantile normalized frequency
 - pval - upper-tail p-value of (i,j) contact according to quantile normalized frequency
-- fdr - False discovery rate adjusted p-value
-- bon - Bonferroni corrected p-value
+- fdr - false discovery rate adjusted p-value
+- bon - bonferroni corrected p-value
 - ibp - start base pair of first interacting loci
 - jbp - start base pair of second interacting loci
 - rawc - observed raw contact counts
