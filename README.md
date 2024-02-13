@@ -11,12 +11,14 @@ In this project, we develop a computation method to integrate both eQTL and Hi-C
 <img src="image/Fig1.png" alt="Workflow Image" title="Workflow Image" width="600" />
 
 <!-- GETTING STARTED -->
-## Identify non-random interactions from Hi-C data
-The non-random interactions of selected loci are identified by [CHROMATIX](https://bitbucket.org/aperezrathke/chr-loc-mbi-mam/src/master/).
+## Step 1. Identify non-random interactions from Hi-C data
+Download raw HiC data from 4DN and follow the instructions on [CHROMATIX](https://bitbucket.org/aperezrathke/chr-loc-mbi-mam/src/master/) to identify the non-random interactions of selected loci. 
+
+
 
 <img src="image/non_random_interactions.jpg" alt="Non-Random interactions" title="Non-Random interactions" width="600" />
 
-### Output Data
+### The output files of non-random interactions shows below:
 
 Here is an example specific interaction output file for GM12878 in chr2: 230805000 - 231690000
 
@@ -39,8 +41,27 @@ For each file, there are 9 columns:
 
 More details see [Sample_data](sample_data/specific_interactions)
 
-## Reconstruct 3D chromatin structures
-The 3D chromatin structures are reconstructed by [sBIF](https://github.com/qiusun0215/sBIF).
+## Step 2. Prepare input file to reconstruct 3D chromatin chains
+
+Run [get_folding_input_file](scr/) to get the input file to reconstruct 3D chromatin chains.
+
+### The input file to reconstruct 3D chromatin chains shows below:
+
+| chr | ibp | jbp | fq | w |
+|-----------------|-----------------|-----------------|-----------------|-----------------|
+| chr2 |	230870000	| 231020000 | 0.3072 | 1 |
+| chr2	| 230870000	| 231025000 |	0.2462 | 1 |
+| ...	| ...	| ...	| ... | ... |
+
+For each file, there are 5 columns:
+- chr - chromosome numbber 
+- ibp - start base pair of first interacting loci
+- jbp - start base pair of second interacting loci
+- fq - quantile normalized frequency
+- w - weights for the non-random interactions
+
+## Step 3. Reconstruct 3D chromatin structures
+Using the input files generated from Step 2, and following the instructions of [sBIF](https://github.com/qiusun0215/sBIF) to reconstruct 3D chromatin chains
 
 ![Chromatin Chains](image/chromatin_chains.png "Chromatin Chains")
 
