@@ -39,7 +39,7 @@ For each file, there are 9 columns:
 - jbp - start base pair of second interacting loci
 - rawc - observed raw contact counts
 
-More details see [Sample_data](sample_data/specific_interactions)
+More details see [sample_data](sample_data/specific_interactions)
 
 ## Step 2. Prepare input file to reconstruct 3D chromatin chains
 
@@ -60,6 +60,8 @@ For each file, there are 5 columns:
 - fq - quantile normalized frequency
 - w - weights for the non-random interactions
 
+More details see [folding_data](sample_data/folding_input)
+
 ## Step 3. Reconstruct 3D chromatin structures
 Using the input files generated from Step 2, and following the instructions of [sBIF](https://github.com/qiusun0215/sBIF) to reconstruct 3D chromatin chains
 
@@ -79,7 +81,7 @@ Here is an example reconstructed chromatin chain output file for GM12878 in chr2
 - 3 columns represent the center of beads x y z in 3D separately. 
 - Each row represents a 5kb genomic region.
 
-More details see [Sample_data](sample_data/3D_chromatin_chains)
+More details see [chromatin chain](sample_data/3D_chromatin_chains)
 
 
 If using this software, please cite:
