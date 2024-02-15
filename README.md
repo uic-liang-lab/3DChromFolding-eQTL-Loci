@@ -70,7 +70,9 @@ For each file, there are 5 columns:
 More details see [folding_data](sample_data/folding_input)
 
 ## Step 3. Reconstruct 3D chromatin structures
-Using the input files generated from Step 2, and following the instructions of [sBIF](https://github.com/qiusun0215/sBIF) to reconstruct 3D chromatin chains
+Using the input files generated from Step 2, and following the [instruction](scr/3Dchromatin_folding.ipynb) reconstruct 3D chromatin chains
+
+Check more details about folding 3D chromatin chains on [sBIF](https://github.com/qiusun0215/sBIF) 
 
 ![Chromatin Chains](image/chromatin_chains.png "Chromatin Chains")
 
