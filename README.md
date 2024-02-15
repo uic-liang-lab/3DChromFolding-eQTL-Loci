@@ -15,7 +15,7 @@ In this project, we develop a computation method to integrate both eQTL and Hi-C
 
 We provide a summary of the workflow used for identifying non-random interactions in GM12878 cells. Analysis was primarily done under a Linux environment. The raw HiC data are downloaded from 4DN and follow the instructions on [CHROMATIX](https://bitbucket.org/aperezrathke/chr-loc-mbi-mam/src/master/) to identify the non-random interactions of selected loci.
 
--Check [scr/non-random_interactions_calling](/scr/non-random_interactions_calling) for details.
+-Check [/scr/non-random_interactions_calling](scr/non-random_interactions_calling.ipynb) for details.
 
 
 
