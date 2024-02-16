@@ -1,6 +1,6 @@
 # Constructing High-Resolution Ensemble Models of 3D Single-Cell Chromatin Conformations of eQTL Loci from Integrated Analysis of 4DN-GTEx Data Towards the Structural Basis of Differential Gene Expression
 
-A computational pipeline to identify non-random interactions and reconstruct 3D chromatin structures of modeled single cells from Hi-C data.
+A Computational Pipeline for Non-Random Interaction Identification,  3D Chromatin Structure Reconstruction from Hi-C Data and integrate it with eQTL Data.
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
