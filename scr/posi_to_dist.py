@@ -2,7 +2,6 @@ import pandas as pd
 import os
 import numpy as np
 from sklearn.metrics.pairwise import pairwise_distances
-import concurrent.futures
 
 ## calculate the distance between beads from the 3D chromatin chains data 
 
