@@ -92,6 +92,22 @@ Here is an example reconstructed chromatin chain output file for GM12878 in chr2
 
 More details see [chromatin chain](sample_data/3D_chromatin_chains)
 
+## Step 4. Call physical contacted eGene-eQTL pairs
+
+Integrate reconstructed 3D chromatin chain data with GTEx eGene and eQTL data.
+
+- Download the eQTL data from [GTEx](https://www.gtexportal.org/home/downloads/adult-gtex/qtl)
+- Using the output data from Step 3, run [posi_to_dist.py](scr/posi_to_dist.py) to calculate the pairwise distance among all beads.
+- Run [get_physical_contacted_eGene_eQTL_pairs](scr/get_physical_contacted_eGene_eQTL_pairs.ipynb) to get the list of physical contacted eGene-eQTL pairs.
+
+Here is an example of the output file:
+| eGene_name | variant_id |
+|-----------------|-----------------|
+|ENSG00000204128	| chr2_231054040_C_T_b38 |
+|ENSG00000204128	| chr2_231054157_G_C_b38 |
+| ... | ...  |
+
+
 
 If using this software, please cite:
 
