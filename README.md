@@ -111,5 +111,6 @@ Here is an example of the output file:
 
 If using this software, please cite:
 
+- Du, Lin, Hammad Farooq, Pourya Delafrouz, and Jie Liang. "Structural basis of differential gene expression at eQTLs loci from high-resolution ensemble models of 3D single-cell chromatin conformations." Bioinformatics 41, no. 2 (2025): btaf050.
 - Perez-Rathke, Alan, Qiu Sun, Boshen Wang, Valentina Boeva, Zhifeng Shao, and Jie Liang. "CHROMATIX: computing the functional landscape of many-body chromatin interactions in transcriptionally active loci from deconvolved single cells." Genome Biology 21, no. 1 (2020): 1-17. https://doi.org/10.1186/s13059-019-1904-z.
 - Sun, Qiu, Alan Perez-Rathke, Daniel M. Czajkowsky, Zhifeng Shao, and Jie Liang. "High-resolution single-cell 3D-models of chromatin ensembles during Drosophila embryogenesis." Nature communications 12, no. 1 (2021): 205.
